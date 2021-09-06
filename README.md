@@ -14,3 +14,5 @@
   <li> Microsoft.EntityFrameworkCore.Tools</li>
   <li> Serilog.AspNetCore</li>
 </ul>
+http://github.com - automatic!
+[GitHub](http://github.com)
