@@ -7,7 +7,7 @@
 </ul>
 <h4>Core Packages</h4>
 <ul>
-  <li> Microsoft.AspNetCore.Authentication.JwtBearer</li>
+  <li> Microsoft.AspNetCore.Authentication.JwtBearer</li>(https://docs.microsoft.com/en-us/ef/core/)
   <li> Microsoft.AspNetCore.Authentication.OpenIdConnect</li>
   <li> Microsoft.EntityFrameworkCore </li>
   <li> Microsoft.EntityFrameworkCore.SqlServer</li>
