@@ -9,10 +9,8 @@
 <ul>
   <li> Mcrosoft.AspNetCore.Authentication.JwtBearer</li>
   <li> Microsoft.AspNetCore.Authentication.OpenIdConnect</li>
-  <li> [Microsoft.EntityFrameworkCore](https://docs.microsoft.com/en-us/ef/core/)</li>
+  [Microsoft.EntityFrameworkCore](https://docs.microsoft.com/en-us/ef/core/)
   <li> Microsoft.EntityFrameworkCore.SqlServer</li>
   <li> Microsoft.EntityFrameworkCore.Tools</li>
   <li> Serilog.AspNetCore</li>
 </ul>
-http://github.com - automatic!
-[GitHub](http://github.com)
