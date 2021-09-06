@@ -28,9 +28,22 @@ namespace webapi_boilerplate
         {
 
             services.AddControllers();
+            services.AddCors(cors =>
+            {
+                cors.AddPolicy("defaultCorsPolicy", cors =>
+                    cors.AllowAnyMethod()
+                        .AllowAnyOrigin()
+                        .AllowAnyHeader()
+               );
+            });
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "webapi_boilerplate", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "webapi_boilerplate",
+                    Version = "v1",
+                    Description = "WebAPI boilerplate by kolya"
+                });
             });
         }
 
@@ -40,12 +53,15 @@ namespace webapi_boilerplate
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "webapi_boilerplate v1"));
             }
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "webapi_boilerplate v1"));
 
             app.UseHttpsRedirection();
 
+            app.UseCors("defaultCorsPolicy");
             app.UseRouting();
 
             app.UseAuthorization();
