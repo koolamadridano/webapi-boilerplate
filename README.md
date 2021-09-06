@@ -7,9 +7,9 @@
 </ul>
 <h4>Core Packages</h4>
 <ul>
-  <li> Microsoft.AspNetCore.Authentication.JwtBearer</li>(https://docs.microsoft.com/en-us/ef/core/)
+  <li> Mcrosoft.AspNetCore.Authentication.JwtBearer</li>
   <li> Microsoft.AspNetCore.Authentication.OpenIdConnect</li>
-  <li> Microsoft.EntityFrameworkCore </li>
+  <li> [Microsoft.EntityFrameworkCore](https://docs.microsoft.com/en-us/ef/core/)</li>
   <li> Microsoft.EntityFrameworkCore.SqlServer</li>
   <li> Microsoft.EntityFrameworkCore.Tools</li>
   <li> Serilog.AspNetCore</li>
